@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "io.github.indicode.fabric.cauldronbrew.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "BrewingRecipeRegistryMixin",
+    "CauldronBlockMixin",
+    "ThreadedAnvilChunkStorageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
