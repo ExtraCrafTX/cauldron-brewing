@@ -23,7 +23,7 @@ public class CauldronBrewing implements ModInitializer {
         BREWING_CAULDRON = new BrewingCauldronBlock();
         Registry.BLOCK.add(new Identifier("cauldronbrew", "cauldron"), BREWING_CAULDRON);
         CAULDRON_BLOCK_ENTITY = BlockEntityType.Builder.create(BrewingCauldronBlockEntity::new, BREWING_CAULDRON).build(null);
-        Registry.register(Registry.BLOCK_ENTITY, "cauldronbrew:cauldron_entity", CAULDRON_BLOCK_ENTITY);
+        Registry.register(Registry.BLOCK_ENTITY, new Identifier("cauldronbrew", "cauldron"), CAULDRON_BLOCK_ENTITY);
         BlockEntityRendererRegistry.INSTANCE.register(BrewingCauldronBlockEntity.class, new BrewingCauldronBESR());
     }
 }

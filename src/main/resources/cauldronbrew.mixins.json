@@ -6,8 +6,7 @@
   ],
   "client": [
     "BrewingRecipeRegistryMixin",
-    "CauldronBlockMixin",
-    "ThreadedAnvilChunkStorageMixin"
+    "CauldronBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
